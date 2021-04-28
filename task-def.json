@@ -12,14 +12,7 @@
           "protocol": "tcp"
         }
       ],
-      "essential": true,
-      "entryPoint": [
-        "sh",
-        "-c"
-      ],
-      "command": [
-        "/bin/sh -c \"httpd-foreground\""
-      ]
+      "essential": true
     }
   ],
   "requiresCompatibilities": [

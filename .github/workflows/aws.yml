@@ -28,13 +28,12 @@ on:
     branches:
       - main
 env:
-  AWS_REGION: us-west-2                   # set this to your preferred AWS region
-  ECR_REPOSITORY: simple-ecr-docker-github-actions           # set this to your Amazon ECR repository name
-  ECS_SERVICE: simple-ecr-docker-github-actions-service                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: simple-ecr-docker-github-actions         # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: task-def.json # set this to the path to your Amazon ECS task definition file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: simple-ecr-docker-github-actions           # set this to the name of the container in the containerDefinitions section of your task definition
-
+  AWS_REGION: us-west-2
+  ECR_REPOSITORY: simple-ecr-docker-github-actions
+  ECS_SERVICE: simple-ecr-docker-github-actions-service
+  ECS_CLUSTER: simple-ecr-docker-github-actions
+  ECS_TASK_DEFINITION: task-def.json
+  CONTAINER_NAME: simple-ecr-docker-github-actions
 
 name: Deploy to Amazon ECS
 
